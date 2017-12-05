@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { FileOpener } from '@ionic-native/file-opener';
-import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook';
-
 /**
  * Generated class for the RegistroPage page.
  *
@@ -26,7 +23,7 @@ export class RegistroPage {
   fechaNacimiento:string; 
   userData: any;
 
-  constructor(public navCtrl: NavController, public iab: InAppBrowser, private facebook: Facebook, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
