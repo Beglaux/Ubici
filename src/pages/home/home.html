@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align:center">
+      {{titulo}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img width="300" height="290" src="../assets/img/foto.jpg"/>
+  <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-left></ion-icon>
+        <ion-input type="text" placeholder="Nombre de Usuario"[(ngModel)]="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="key" item-left></ion-icon>
+        <ion-input type="password" placeholder="Contraseña"[(ngModel)]="password"></ion-input>
+      </ion-item>
+  </ion-list>
+  <button ion-button block (click)="login()">Ingresar</button>
+  <button ion-button block color="light" (click)="GoPageRegistro()">Registrarse</button>
+</ion-content>
